@@ -6,7 +6,7 @@ document.getElementById('addTask').addEventListener('click', () => {
     const taskList = document.getElementById('taskList');
     const listItem = document.createElement('li');
 
-    listItem.className = task.replace(/[^a-zA-Z0-9]/g, '');
+//     listItem.className = task.replace(/[^a-zA-Z0-9]/g, '');               //this is only for testcase in unique class name 
     listItem.innerHTML = `${task} <button class="delete-btn">Delete</button>`;
 
     listItem.querySelector('.delete-btn').addEventListener('click', () => {
